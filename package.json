@@ -1,0 +1,17 @@
+{
+  "name": "websocket-project",
+  "version": "1.0.0",
+  "description": "A simple Node.js WebSocket project with a client and server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Kancer Gokirmak",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "ws": "^8.18.0",
+    "uuid": "^11.0.5"
+  }
+}
