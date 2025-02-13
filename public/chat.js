@@ -1,4 +1,7 @@
-const socket = new WebSocket('ws://localhost:3000')
+const wsProtocol = window.location.protocol === "https:" ? "wss" : "ws";
+const wsHost = window.location.hostname; // Get the hostname dynamically
+const wsPort = window.location.port || 3000; // Default to 3000 if no port is set
+const socket = new WebSocket(`${wsProtocol}://${wsHost}:${wsPort}`);
 
 const chatBox = document.getElementById("chat");
 const messageInput = document.getElementById("messageInput");
